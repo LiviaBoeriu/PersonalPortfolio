@@ -44,6 +44,7 @@ header, footer, nav {
     font-weight: normal;
     font-size: 30px;
     line-height: 148%;
+    width: 75%;
 }
 
 .banner-vector{
