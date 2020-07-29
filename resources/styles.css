@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins';
+    z-index: 1;
 }
 
 body{
@@ -11,36 +12,77 @@ body{
     height: auto;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 32px 32px;
-    grid-template-areas: 
-        "header header header header"
-        ". . . ."
-        "footer footer footer footer";
-  }
 header{
-    grid-area: header;
-    background-color: white;
-    height: 7.5vh;
+    background-image: url("images/background-vector.svg");
+    background-size: cover;
+    background-position: bottom;
+    height: calc(100vh - 7.5vh);
+    margin-top: 7.5vh;
 }
 
-footer{
-    grid-area: footer;
-    background-color: #4A4E69;
+header, footer, nav {
+    width: 100%;
+}
+
+.banner-text {
+    color: #F8F4F1;
+    position: relative;
+    z-index: 10;
+    transform: translate(0, 30vh);
+}
+
+.welcome{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 90px;
+    line-height: 99%;
+    margin-bottom: 30px;
+}
+
+.introduction{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 148%;
+}
+
+.banner-vector{
+    position: absolute;
+    z-index: 0;
+}
+
+.banner-picture{
+    height: 100%
+}
+
+.banner-content{
     display: flex;
     justify-content: space-between;
     height: 100%;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 7.5vh;
+    background-color: #4A4E69;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
-    height: 100%;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 7.5vh;
+    z-index: 100000;
+    background-color: white;
+    text-align: center;
 }
 
 nav ul{
@@ -48,7 +90,7 @@ nav ul{
     list-style-type: none;
 }
 
-nav ul li, footer div a {
+nav ul li, footer div a{
     margin: 0 15px;
 }
 
@@ -59,4 +101,31 @@ footer div a:last-child, nav ul li:last-child {
 .inner-padding {
     padding: 0 10vw;
 }
+
+main {
+    display:flex;
+    height: 100%
+}
+
+a {
+   cursor: pointer;
+}
+
+.logo {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    color: #4A4E69;
+    text-decoration: none;
+}
+
+nav ul li{
+    color: #4A4E69;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+
 
