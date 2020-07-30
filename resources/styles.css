@@ -20,7 +20,7 @@ header{
     margin-top: 7.5vh;
 }
 
-header, footer, nav {
+header, footer, nav, main {
     width: 100%;
 }
 
@@ -41,10 +41,9 @@ header, footer, nav {
 
 .introduction{
     font-style: normal;
-    font-weight: normal;
     font-size: 30px;
     line-height: 148%;
-    width: 75%;
+    width: 80%;
 }
 
 .banner-vector{
@@ -60,6 +59,14 @@ header, footer, nav {
     display: flex;
     justify-content: space-between;
     height: 100%;
+}
+
+.fa-chevron-down {
+    position: absolute;
+    bottom: 5%;
+    left: calc(50% - 20px);
+    color: white;
+    font-size: 45px;
 }
 
 footer{
@@ -104,7 +111,6 @@ footer div a:last-child, nav ul li:last-child {
 }
 
 main {
-    display:flex;
     height: 100%
 }
 
@@ -128,5 +134,52 @@ nav ul li{
     font-size: 20px;
     line-height: 24px;
 }
+
+.skills-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #F2F2F2;
+    height: calc(100vh - 7.5vh);
+}
+
+.skills-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    margin: 100px 30px;
+    background-color: white;
+    border-radius: 7%;
+    box-shadow: 0px 5px 16px rgba(96, 96, 96, 0.25);
+}
+
+.skills-title{
+    color: #4A4E69;
+    background: -webkit-linear-gradient(#4A4E69, #876883);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-search, .fa-pencil-ruler, .fa-code{
+    font-size: 50px;
+    background: -webkit-linear-gradient(#4A4E69, #876883);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.skills-text{
+    font-style: normal;
+    font-size: 18px;
+    margin: 0 12%;
+    color: #4A4E69;
+    line-height: 148%;
+}
+
 
 
