@@ -35,14 +35,12 @@ header, footer, nav, main {
     font-style: normal;
     font-weight: 800;
     font-size: 90px;
-    line-height: 99%;
     margin-bottom: 30px;
 }
 
 .introduction{
     font-style: normal;
     font-size: 30px;
-    line-height: 148%;
     width: 80%;
 }
 
@@ -134,7 +132,6 @@ nav ul li{
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
-    line-height: 24px;
 }
 
 .skills-container, .about-container {
@@ -182,7 +179,6 @@ nav ul li{
     font-size: 18px;
     margin: 0 12%;
     color: #4A4E69;
-    line-height: 148%;
 }
 
 .portfolio-container{
@@ -306,12 +302,12 @@ nav ul li{
 }
 
 .case-title{
-    font-size: 55px;
+    font-size: 65px;
+    line-height: 1.1;
 }
 
 .case-text{
     font-size: 20px;
-    line-height: 148%;
     color: #4A4E69;
 }
 
