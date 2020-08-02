@@ -113,6 +113,7 @@ main {
 
 a:any-link {
    cursor: pointer;
+   text-decoration: none;
 }
 
 .logo {
@@ -272,4 +273,8 @@ nav ul li{
 .social-link{
     text-decoration: none;
     color: #F2F2F2;
+}
+
+.header-other {
+    background-image: none;
 }
