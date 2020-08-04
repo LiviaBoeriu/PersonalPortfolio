@@ -16,8 +16,6 @@ header{
     background-image: url("images/background-vector.svg");
     background-size: cover;
     background-position: bottom;
-    height: calc(100vh - 7.5vh);
-    margin-top: 7.5vh;
 }
 
 header, footer, nav, main, .header-other {
@@ -56,7 +54,8 @@ header, footer, nav, main, .header-other {
 .banner-content{
     display: flex;
     justify-content: space-between;
-    height: 100%;
+    height: calc(100vh - 7.5vh);
+    margin-top: 7.5vh;
 }
 
 .fa-chevron-down {
@@ -86,6 +85,7 @@ nav {
     z-index: 100000;
     background-color: white;
     text-align: center;
+    border-bottom: 1px solid #E5E5E5;
 }
 
 nav ul{
@@ -283,10 +283,12 @@ nav ul li{
     color: #F2F2F2;
 }
 
-.header-other {
-    background-image: none;
-    height: fit-content;
+.header-thiscloser {
+    background-image: url("images/google-case.jpg");
+    background-position: center;
+    background-size: cover;
 }
+
 
 .case-section {
     display: flex;
@@ -368,7 +370,8 @@ nav ul li{
     height: 4.5vh;
     background-color: white;
     text-align: center; 
-    width: 100%;   
+    width: 100%; 
+    top: 7.5vh;  
 }
 
 .breadcrumb > * {
@@ -383,4 +386,65 @@ nav ul li{
     border-bottom: #876883;
     border-bottom-style: solid;
     border-bottom-width: thin;
+}
+
+.case-sections{
+    display: flex;
+    height: 100%;
+}
+
+.vertical-navigation {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    position: fixed;
+}
+
+.case-study {
+    width: 60%;
+}
+
+.case-picture {
+    height: 100%;
+}
+
+.header-content {
+    position: relative;
+    height: 50vh;
+    margin-top: 12vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.header-content::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.case-header-text {
+    position: relative;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 71px;
+    color: white;
+    z-index: 100;
+}
+
+.case-header-description {
+    position: relative;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 71px;
+    color: white;
+    z-index: 100;
 }
