@@ -410,7 +410,7 @@ nav ul li{
 
 .header-content {
     position: relative;
-    height: 50vh;
+    height: 60vh;
     margin-top: 12vh;
     display: flex;
     flex-direction: column;
@@ -418,9 +418,10 @@ nav ul li{
     text-align: center;
 }
 
+
 .header-content::after {
     content: "";
-    background-color: rgba(0, 0, 0, 0.3);
+    background: linear-gradient(175.93deg, rgba(74, 78, 105, 0.55) 7.95%, rgba(135, 104, 131, 0.55) 89.72%);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -437,14 +438,17 @@ nav ul li{
     line-height: 71px;
     color: white;
     z-index: 100;
+    margin-bottom: 2%;
 }
 
 .case-header-description {
     position: relative;
     font-style: normal;
-    font-weight: 400;
-    font-size: 44px;
+    font-weight: 600;
+    font-size: 34px;
     line-height: 71px;
     color: white;
     z-index: 100;
+    width: 60%;
+    align-self: center;
 }
