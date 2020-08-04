@@ -20,7 +20,7 @@ header{
     margin-top: 7.5vh;
 }
 
-header, footer, nav, main {
+header, footer, nav, main, .header-other {
     width: 100%;
 }
 
@@ -172,6 +172,7 @@ nav ul li{
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    width: fit-content;
 }
 
 .skills-text{
@@ -231,10 +232,12 @@ nav ul li{
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    width: fit-content;
 }
 
 .about-text{
     font-size: 20px;
+    color: #4A4E69;
 }
 
 .about-content > * {
@@ -341,7 +344,8 @@ nav ul li{
 
 .about-heading {
     font-size: 60px;
-    background: linear-gradient(#4A4E69 0%, #876883 100%);
+    background: linear-gradient(90deg, #4A4E69 0%, #876883 100%);
+    width: max-content;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -353,4 +357,29 @@ nav ul li{
     font-size: 18px;
     color: #4A4E69;
     width: 95%;
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+    height: 5vh;
+    background-color: white;
+    text-align: center;    
+}
+
+.breadcrumb > * {
+    margin-right: 1%;
+    font-size: medium;
+    color: #4A4E69;
+    font-weight: 300;
+}
+
+/* needs reviewing */
+.breadcrumb-link {
+    border-bottom: #876883;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
 }
