@@ -347,12 +347,12 @@ nav ul li{
 .about-heading {
     font-size: 60px;
     background: linear-gradient(90deg, #4A4E69 0%, #876883 100%);
-    width: max-content;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
     font-weight: 800;
+    width: max-content;
 }
 
 .about-paragraph {
@@ -365,13 +365,13 @@ nav ul li{
     display: flex;
     align-items: center;
     position: fixed;
-    /* top: 0;
-    left: 0; */
     height: 4.5vh;
     background-color: white;
     text-align: center; 
     width: 100%; 
-    top: 7.5vh;  
+    top: 7.5vh; 
+    z-index: 10000; 
+    border-bottom: 1px solid #E5E5E5;
 }
 
 .breadcrumb > * {
@@ -388,24 +388,10 @@ nav ul li{
     border-bottom-width: thin;
 }
 
-.case-sections{
-    display: flex;
-    height: 100%;
-}
-
 .vertical-navigation {
     display: flex;
     flex-direction: column;
     width: 40%;
-    position: fixed;
-}
-
-.case-study {
-    width: 60%;
-}
-
-.case-picture {
-    height: 100%;
 }
 
 .header-content {
@@ -417,7 +403,6 @@ nav ul li{
     justify-content: center;
     text-align: center;
 }
-
 
 .header-content::after {
     content: "";
@@ -451,4 +436,64 @@ nav ul li{
     z-index: 100;
     width: 60%;
     align-self: center;
+}
+
+.vertical-list {
+    position: sticky;
+    top: 22vh;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 10vh 0;
+}
+
+.vertical-list > li {
+    padding: 5px 0;
+    font-size: 20px;
+}
+
+.vertical-list a {
+    text-decoration: none;
+    color: #4A4E69;
+}
+
+.case-sections{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+}
+
+.case-study {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.case-heading, .case-subheading {
+    font-weight: 800;
+    font-size: 50px;
+    background: linear-gradient(90deg, #4A4E69 0%, #876883 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: max-content;
+    margin: 3% 0;
+}
+
+.case-subheading {
+    font-size: 30px;
+}
+
+.case-paragraph {
+    font-size: 18px;
+    font-weight: normal;
+    width: 67%;
+}
+
+.case-picture {
+    margin: 4% 0;
+    width: 67%;
 }
