@@ -569,8 +569,9 @@ nav ul li{
 .contact-form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: flex-end;
+    margin-bottom: 10%;
 }
 
 .contact-form > * {
@@ -580,7 +581,7 @@ nav ul li{
     height: fit-content;
 }
 
-input {
+input, textarea {
     background: linear-gradient(104.76deg, #E8E3E7 0%, #F1F1F4 100%);
     border: 1px solid #C3C5D5;
     box-sizing: border-box;
