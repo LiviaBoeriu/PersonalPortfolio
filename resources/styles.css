@@ -18,7 +18,7 @@ body{
     background-position: bottom;
 }
 
-header, footer, nav, main, .header-other {
+header, footer, nav, main, .header-other{
     width: 100%;
 }
 
@@ -197,14 +197,14 @@ nav ul li{
     width: 48%;
 }
 
-.portfolio-title{
+.portfolio-title {
     position: relative;
     font-size: 70px;
     text-align: center;
     padding-top: 5%;
 }
 
-.portfolio-text{
+.portfolio-text, .contact-paragraph {
     font-size: 25px;
     color: #4A4E69;
 }
@@ -225,7 +225,7 @@ nav ul li{
     padding: 10vh 10vw;
 }
 
-.about-title, .contact-title, .case-title{
+.about-title, .contact-title, .case-title, .contact-heading {
     font-size: 70px;
     margin-bottom: 2%;
     background: linear-gradient(90deg,#4A4E69, #876883);
@@ -531,4 +531,63 @@ nav ul li{
     color: #4A4E69;
     font-size: 1.3em;
     width: 65%;
+}
+
+.contact-content {
+    background-image: url("images/contact-banner.svg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.contact-content > * {
+    width: 46%;
+}
+
+.contact-heading {
+    font-size: 55pt;
+}
+
+.contact-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact-heading {
+    margin-top: 20%;
+}
+
+.contact-paragraph {
+    color: #F8F4F1;
+    margin-top: 20%;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.contact-form > * {
+    width: 80%;
+    margin: 2% 0;
+    padding: 1%;
+    height: fit-content;
+}
+
+input {
+    background: linear-gradient(104.76deg, #E8E3E7 0%, #F1F1F4 100%);
+    border: 1px solid #C3C5D5;
+    box-sizing: border-box;
+    box-shadow: 4px 0px 16px rgba(85, 85, 85, 0.25);
+    border-radius: 30px;
+}
+
+input[type=submit] {
+    background: #C3C5D5;
 }
