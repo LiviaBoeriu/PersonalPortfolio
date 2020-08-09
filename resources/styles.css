@@ -93,11 +93,11 @@ nav ul{
     list-style-type: none;
 }
 
-nav ul li, footer div a{
+nav ul li, footer div a {
     margin: 0 15px;
 }
 
-nav ul li > a{
+nav ul li > a {
     color: #4A4E69;
 }
 
@@ -220,6 +220,15 @@ nav ul li{
     text-decoration: none;
 }
 
+.call-to-action:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,4,0.2), 0 6px 20px 0 rgba(0,5,0,0.19);
+    transition: 0.25s;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -ms-transition: 0.25s;
+    -o-transition: 0.25s;
+}
+
 .about-container{
     height: fit-content;
     padding: 10vh 10vw;
@@ -268,6 +277,15 @@ nav ul li{
     padding: 12px 24px;
     text-decoration: none;
     width: fit-content;
+}
+
+.contact-button:hover, .read-more-button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,4,0.2), 0 6px 20px 0 rgba(0,5,0,0.19);
+    transition: 0.25s;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -ms-transition: 0.25s;
+    -o-transition: 0.25s;
 }
 
 .read-more-button {
@@ -534,12 +552,13 @@ nav ul li{
 }
 
 .contact-content {
-    background-image: url("images/contact-banner.svg");
+    /* background-image: url("images/contact-banner.svg"); */
     background-position: center;
     background-size: cover;
     display: flex;
     justify-content: space-between;
-    height: 100vh;
+    height: 90vh;
+    margin: 2vh 0;
 }
 
 .contact-content > * {
@@ -558,12 +577,11 @@ nav ul li{
 }
 
 .contact-heading {
-    margin-top: 20%;
+    margin-top: 10%;
 }
 
 .contact-paragraph {
-    color: #F8F4F1;
-    margin-top: 20%;
+    color: #4A4E69;;
 }
 
 .contact-form {
@@ -581,14 +599,14 @@ nav ul li{
 }
 
 input, textarea {
-    background: linear-gradient(104.76deg, #E8E3E7 0%, #F1F1F4 100%);
+    background: #56536e;
     border: 2px solid #F8F4F1;
     box-sizing: border-box;
     box-shadow: 4px 0px 16px rgba(85, 85, 85, 0.25);
     border-radius: 30px;
     padding: 1% 4%;
     font-size: 16px;
-    color: #4A4E69;
+    color: #ffffff;
 }
 
 textarea {
@@ -606,18 +624,26 @@ input:focus, textarea:focus {
     -o-transition: 0.25s;
 }
 
+::placeholder {
+    color: white;
+}
+
 input[type=submit] {
-    background: #C3C5D5;
+    background: #56536e;
     cursor: pointer;
     border-color: #4A4E69;
+    color: white;
 }
 
 input[type=submit]:hover {
-    background-color: #9399bd;
-    color: white;
-    transition: 0.25s;
-    -webkit-transition: 0.25s;
-    -moz-transition: 0.25s;
-    -ms-transition: 0.25s;
-    -o-transition: 0.25s;
+    outline: none;
+    border-color: rgb(86 83 110);
+    box-shadow: 0px 2px 8px 0px rgb(60 64 86);
+    background: linear-gradient(90deg, #4A4E69 0%, #876883 100%);
+    transition: ease-in 0.25s;
+    -webkit-transition: ease-in 0.25s;
+    -moz-transition: ease-in 0.25s;
+    -ms-transition: ease-in 0.25s;
+    -o-transition: ease-in 0.25s;
 }
+
