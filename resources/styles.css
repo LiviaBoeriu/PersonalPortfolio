@@ -571,24 +571,53 @@ nav ul li{
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 .contact-form > * {
     width: 80%;
     margin: 2% 0;
-    padding: 1%;
     height: fit-content;
 }
 
 input, textarea {
     background: linear-gradient(104.76deg, #E8E3E7 0%, #F1F1F4 100%);
-    border: 1px solid #C3C5D5;
+    border: 2px solid #F8F4F1;
     box-sizing: border-box;
     box-shadow: 4px 0px 16px rgba(85, 85, 85, 0.25);
     border-radius: 30px;
+    padding: 1% 4%;
+    font-size: 16px;
+    color: #4A4E69;
+}
+
+textarea {
+    resize: none;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: rgb(108 112 142);
+    box-shadow: 0px 0px 8px 0px rgb(188 197 255);    
+    transition: 0.25s;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -ms-transition: 0.25s;
+    -o-transition: 0.25s;
 }
 
 input[type=submit] {
     background: #C3C5D5;
+    cursor: pointer;
+    border-color: #4A4E69;
+}
+
+input[type=submit]:hover {
+    background-color: #9399bd;
+    color: white;
+    transition: 0.25s;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -ms-transition: 0.25s;
+    -o-transition: 0.25s;
 }
