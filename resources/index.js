@@ -1,6 +1,6 @@
-let verticalList = document.getElementsByClassName('vertical-list')[0];
+const verticalList = document.getElementsByClassName('vertical-list')[0];
 
-let scrollPage = () => {
+const scrollPage = () => {
     event.preventDefault();
 
     let target = event.target;
@@ -18,3 +18,12 @@ let scrollPage = () => {
 
 verticalList.addEventListener('click', scrollPage);
 
+
+
+const resume = document.getElementById('resume');
+
+const openPDF = () => {
+    window.openTab('../resources/resume.pdf', '_blank');
+}
+
+resume.addEventListener('click', openPDF);

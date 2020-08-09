@@ -471,6 +471,14 @@ nav ul li{
     width: 12%;
 }
 
+.sub-item {
+    width: 90%;
+}
+
+.sub-item > a {
+    font-size: 16px;
+}
+
 .vertical-list {
     position: sticky;
     top: 22vh;
@@ -484,8 +492,18 @@ nav ul li{
     padding: 5px 12px;
     font-size: 20px;
     background-color: #4A4E69;
-    margin-top: 4%;
+    margin-top: 8%;
     text-align: right;
+}
+
+.vertical-list li:hover {
+    border-color: rgb(86 83 110);
+    box-shadow: 0px 2px 8px 0px rgb(60 64 86);
+    transition: 0.25;
+    -webkit-transition: 0.25;
+    -moz-transition: 0.25;
+    -ms-transition: 0.25;
+    -o-transition: 0.25;
 }
 
 .vertical-list a {
@@ -576,16 +594,14 @@ nav ul li{
 .contact-text {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 
-.contact-heading {
-    margin-top: 10%;
-}
 
 .contact-paragraph {
-    color: #4A4E69;;
+    color: #4A4E69;
+    margin-top: 5%;
 }
 
 .contact-form {
