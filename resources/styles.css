@@ -473,7 +473,7 @@ nav ul li{
 .vertical-navigation {
     display: flex;
     flex-direction: column;
-    width: 210px;
+    width: 220px;
 }
 
 .sub-item {
