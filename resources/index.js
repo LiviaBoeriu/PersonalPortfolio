@@ -20,30 +20,47 @@ const scrollPage = () => {
 verticalList.addEventListener('click', scrollPage);
 
 // Slideshow for boardgame case page
-var slideIndex = 1;
-showSlides(slideIndex);
+let currentIndex = 0;
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+
+function showSlides() {
+    let slides = document.getElementsByClassName("mySlides");
+    let text = document.getElementsByClassName("slidesText");
+    let number = document.getElementById("numbertext");
+    let prev = document.getElementById("prev");
+    let next = document.getElementById("next");
+    
+    for (let i = 0; i < slides.length; i++) {
+        if (i === currentIndex) {
+            slides[i].classList.remove('hidden');  
+            text[i].classList.remove('hidden'); 
+        } else {
+            slides[i].classList.add('hidden'); 
+            text[i].classList.add('hidden');
+        }
+    }
+
+    if (currentIndex === 0) {
+        prev.classList.add('disabled');
+    } else {
+        prev.classList.remove('disabled');
+    }
+
+    if (currentIndex === slides.length - 1) {
+        next.classList.add('disabled');
+    } else {
+        next.classList.remove('disabled');
+    }
+
+    number.innerHTML = `${currentIndex + 1} / ${slides.length}`;
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+function changeSlide(isNext) {
+    if (isNext) {
+        currentIndex += 1;
+    } else {
+        currentIndex -= 1;
+    }
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
+    showSlides();
 }
-
