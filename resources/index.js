@@ -64,3 +64,4 @@ function changeSlide(isNext) {
 
     showSlides();
 }
+
