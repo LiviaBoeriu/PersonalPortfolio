@@ -1,3 +1,4 @@
+// Functionality for case navigation
 const verticalList = document.getElementsByClassName('vertical-list')[0];
 
 const scrollPage = () => {
@@ -18,12 +19,31 @@ const scrollPage = () => {
 
 verticalList.addEventListener('click', scrollPage);
 
+// Slideshow for boardgame case page
+var slideIndex = 1;
+showSlides(slideIndex);
 
-
-const resume = document.getElementById('resume');
-
-const openPDF = () => {
-    window.openTab('../resources/resume.pdf', '_blank');
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
 
-resume.addEventListener('click', openPDF);
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
