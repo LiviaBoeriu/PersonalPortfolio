@@ -5,8 +5,10 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" href="resources/styles.css">
-    <link rel="stylesheet" href="resources/index.js">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="./resources/home.js" defer></script>
     <script src="https://kit.fontawesome.com/a62bb4a23a.js" crossorigin="anonymous"></script>
     <title>Livia Boeriu Designing for users with users</title>
 </head>
@@ -24,20 +26,22 @@
         </nav>
 
         <!-- <img src="resources/images/background vector.svg" alt="background purple vector" class="banner-vector"> -->
-        <div class="banner-content inner-padding">        
-            <div class="banner-text">        
+        <div class="banner-content inner-padding">
+            <div class="banner-text">
                 <h1 class="welcome">Hi, I'm Liv</h1>
-                <p class="introduction">I am always on the lookout for new challenges and passionate people to collaborate with in 
-                    <strong>researching</strong>, <strong>designing</strong> and <strong>implementing</strong> qualitative software solutions.</p>
+                <p class="introduction">I am always on the lookout for new challenges and passionate people to
+                    collaborate with in
+                    <strong>researching</strong>, <strong>designing</strong> and <strong>implementing</strong>
+                    qualitative software solutions.</p>
             </div>
-            
+
             <i class="fas fa-chevron-down"></i>
 
-            <img src="resources/images/picture.png" alt="Livia Boeriu portrait picture" class="banner-picture">
+            <!-- <img src="resources/images/picture.png" alt="Livia Boeriu portrait picture" class="banner-picture"> -->
         </div>
-                    
+
     </header>
-    
+
     <main class="content">
         <!-- Skills section containing cards about research, design and implementation -->
         <section>
@@ -45,44 +49,67 @@
                 <div class="skills-card">
                     <i class="fas fa-search"></i>
                     <h1 class="skills-title">Research</h1>
-                    <p class="skills-text">Work closely with users in order to understand their needs through user-centered and participatory design.</p>
+                    <p class="skills-text">Work closely with users in order to understand their needs through
+                        user-centered and participatory design.</p>
                 </div>
-    
+
                 <div class="skills-card">
                     <i class="fas fa-pencil-ruler fa-gradient"></i>
                     <h1 class="skills-title">Design</h1>
-                    <p class="skills-text">Create solutions tailored to fit the users' universe by looking beyond words and into actual context and practices.</p>
+                    <p class="skills-text">Create solutions tailored to fit the users' universe by looking beyond words
+                        and into actual context and practices.</p>
                 </div>
-    
+
                 <div class="skills-card">
                     <i class="fas fa-code"></i>
                     <h1 class="skills-title">Development</h1>
-                    <p class="skills-text">Implement design by using current technologies with the ability to deal with front-end and back-end tasks. </p>
+                    <p class="skills-text">Implement design by using current technologies with the ability to deal with
+                        front-end and back-end tasks. </p>
                 </div>
             </div>
         </section>
 
         <!-- Portfolio section -->
         <section class="portfolio-container inner-padding">
-                <h1 class="portfolio-title">Explore my work</h1>
-                <div class="portfolio-content">
-                    <div class="portfolio-image"></div>
-                    <div class="portfolio-call-to-action">
-                        <p class="portfolio-text">All my projects share two particular traits: they were developed through well researched choices and with great care for the users and their needs. </p>
-                        <a href="html/portfolio.html" class="call-to-action">SEE PROJECTS</a>    
-                    </div>    
+            <h1 class="portfolio-title">Explore my work</h1>
+            <div class="portfolio-content">
+                <div class="portfolio-flow">
+                    <!-- Flow icons -->
+                    <i class="far fa-folder-open no-opacity icon"></i>
+                    <img src="resources/images/portfolio-icons/collaborate.svg" alt="Collaborate icon"
+                        class="collaborate-icon no-opacity icon" />
+                    <img src="resources/images/portfolio-icons/check-list.svg" alt="Check list icon"
+                        class="check-list-icon no-opacity icon" />
+                    <i class="far fa-edit no-opacity icon"></i>
+                    <img src="resources/images/portfolio-icons/keyboard.svg" alt="Keyboard icon"
+                        class="keyboard-icon no-opacity icon" />
+                    <img src="resources/images/portfolio-icons/wrench.svg" alt="Wrench icon" class="wrench-icon no-opacity icon" />
+
+                    <!-- Flow text -->
+                    <p id="iconText" class="icon-text no-opacity"></p>
                 </div>
+
+                <!-- Portfolio call to action text and button -->
+                <div class="portfolio-call-to-action">
+                    <p class="portfolio-text">All my projects share two particular traits: they were developed through well
+                        researched choices and with great care for the users and their needs. </p>
+                    <a href="html/portfolio.html" class="call-to-action">SEE PROJECTS</a>
+                </div>
+            </div>
         </section>
 
         <!-- About me section -->
         <section class="about-container inner-padding">
-            <div class="about-content">           
+            <div class="about-content">
                 <h1 class="about-title">About me</h1>
-                <p class="about-text">I am a product designer, with a background in IT Design and Application Development. Through my work I strive to develop software that improves lives and I am constantly looking for challenges and new learning experiences.<br><br>  
+                <p class="about-text">I am a product designer, with a background in IT Design and Application
+                    Development. Through my work I strive to develop software that improves lives and I am constantly
+                    looking for challenges and new learning experiences.<br><br>
 
-                I am looking for a position that allows me to collaborate with equally passionate people and where my skills can be put to use full-time. <br><br>
-                
-                Want to know more? You can do that <a href="html/about.html">here</a>.
+                    I am looking for a position that allows me to collaborate with equally passionate people and where
+                    my skills can be put to use full-time. <br><br>
+
+                    Want to know more? You can do that <a href="html/about.html">here</a>.
                 </p>
             </div>
         </section>
@@ -90,18 +117,18 @@
         <!-- Contact section -->
         <section class="contact-container inner-padding">
             <h1 class="contact-title">Interested in working together? <br>Let's get in touch!</h1>
-            <a href="#" class="contact-button">CONTACT ME</a>    
+            <a href="#" class="contact-button">CONTACT ME</a>
         </section>
     </main>
 
     <footer class="footer inner-padding">
         <p class="footer-text">@ Livia Boeriu 2020</p>
-        <div>    
+        <div>
             <a id="resume" class="social-link" href="/resources/resume.pdf" download="newfilename">Resume</a>
             <a href="https://www.linkedin.com/in/liviaboeriu/" class="social-link">LinkedIn</a>
             <a href="https://github.com/LiviaBoeriu" class="social-link">GitHub</a>
         </div>
-    </footer>	
+    </footer>
 </body>
 
 </html>

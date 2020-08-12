@@ -791,3 +791,71 @@ input[type=submit]:hover {
   }
 
   /* End of slideshow styling */
+
+.portfolio-flow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vw;
+    width: 30vw;
+    position: relative;
+}
+
+.fa-folder-open {
+    position: absolute;
+    left: calc(50% - 20px);
+    top: 0;
+    font-size: 60px;
+    color: #4A4E69;
+}
+
+.fa-edit {
+    position: absolute;
+    left: calc(50% - 20px);
+    bottom: 0;
+    font-size: 60px;
+    color: #4A4E69;
+}
+
+
+.collaborate-icon {
+    position: absolute;
+    right: 0;
+    top: 20%;
+}
+
+.check-list-icon {
+    position: absolute;
+    right: 0;
+    bottom: 20%;
+}
+
+.keyboard-icon {
+    position: absolute;
+    left: 0;
+    bottom: 20%;
+}
+
+.wrench-icon {
+    position: absolute;
+    left: 0;
+    top: 20%;
+}
+
+.icon-text {
+    font-size: 40px;
+    font-weight: 300;
+    color: #4A4E69;
+}
+
+.no-opacity {
+    opacity: 0;
+}
+
+.icon {
+    transition: 0.25s;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -ms-transition: 0.25s;
+    -o-transition: 0.25s;
+}
