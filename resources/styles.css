@@ -879,8 +879,12 @@ input[type=submit]:hover {
   }
 
 /* Style for 360x640 resolution */
-@media screen and (max-width: 360px) {
-    body {
-      
+@media all and (max-width: 360px) {
+    html{
+        font-size: 20px;
+    }
+
+    .skills-container {
+        flex-direction: column;
     }
   }
