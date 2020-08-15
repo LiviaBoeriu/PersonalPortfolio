@@ -1,5 +1,8 @@
 html {
     scroll-behavior: smooth;
+    font-size: 20px;
+    color: #4A4E69;
+    line-height: 1.5;
 }
 
 * {
@@ -9,6 +12,35 @@ html {
     font-family: 'Poppins';
     z-index: 1;
 }
+
+p {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: 1.2rem;
+}
+
+h5 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+h1 {
+    font-size: 4.5rem;
+}
+
 
 body{
     background-color: white;
@@ -36,14 +68,13 @@ header, footer, nav, main, .header-other{
 .welcome{
     font-style: normal;
     font-weight: 800;
-    font-size: 90px;
     margin-bottom: 30px;
 }
 
 .introduction{
     font-style: normal;
-    font-size: 30px;
     width: 80%;
+    font-weight: 400;
 }
 
 .banner-vector{
@@ -143,10 +174,8 @@ a:any-link {
 }
 
 nav ul li{
-    color: #4A4E69;
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
 }
 
 .skills-container, .about-container {
@@ -154,7 +183,6 @@ nav ul li{
     justify-content: space-evenly;
     align-items: center;
     background-color: #F2F2F2;
-    height: 80vh;
 }
 
 .skills-card {
@@ -172,7 +200,6 @@ nav ul li{
 }
 
 .skills-title, .portfolio-title, .about-title {
-    font-size: 35px;
     font-weight: 800;
     color: #4A4E69;
     background: linear-gradient(90deg,#4A4E69, #876883);
@@ -192,7 +219,7 @@ nav ul li{
 
 .skills-text{
     font-style: normal;
-    font-size: 18px;
+    line-height: 1.5;
     margin: 0 12%;
     color: #4A4E69;
 }
@@ -205,7 +232,6 @@ nav ul li{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70vh;
 }
 
 .portfolio-content > * {
@@ -214,14 +240,12 @@ nav ul li{
 
 .portfolio-title {
     position: relative;
-    font-size: 70px;
     text-align: center;
     padding-top: 5%;
 }
 
 .portfolio-text, .contact-paragraph {
-    font-size: 25px;
-    color: #4A4E69;
+    font-weight: 400;
 }
 
 .call-to-action{
@@ -250,18 +274,13 @@ nav ul li{
 }
 
 .about-title, .contact-title, .case-title, .contact-heading {
-    font-size: 70px;
+    font-weight: 800;
     margin-bottom: 2%;
     background: linear-gradient(90deg,#4A4E69, #876883);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     width: fit-content;
-}
-
-.about-text{
-    font-size: 20px;
-    color: #4A4E69;
 }
 
 .about-content > * {
@@ -276,6 +295,7 @@ nav ul li{
     align-items: center;
     text-align: center;
     padding: 7% 0%;
+    margin: 12vh 0;
 }
 
 .contact-title{
@@ -350,16 +370,6 @@ nav ul li{
     width: 44%;
 }
 
-.case-title {
-    font-size: 65px;
-    line-height: 1.1;
-}
-
-.case-text {
-    font-size: 20px;
-    color: #4A4E69;
-}
-
 .right-section {
     background: linear-gradient(118.69deg, #E8E3E7 0%, #F1F1F4 100%);;
     flex-direction: row-reverse;
@@ -370,13 +380,12 @@ nav ul li{
     flex-direction: row-reverse;
     justify-content: space-evenly;
     align-items: center;
-    height: 80vh;
     margin: 10% 0 0 0 ;
 }
 
 
 .about-picture {
-    max-width: 100%;
+    max-width: 35%;
     max-height: 100%;
 }
 
@@ -389,7 +398,6 @@ nav ul li{
 }
 
 .about-heading {
-    font-size: 60px;
     background: linear-gradient(90deg, #4A4E69 0%, #876883 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -400,8 +408,6 @@ nav ul li{
 }
 
 .about-paragraph {
-    font-size: 18px;
-    color: #4A4E69;
     width: 95%;
 }
 
@@ -450,8 +456,7 @@ nav ul li{
 .case-header-text {
     position: relative;
     font-style: normal;
-    font-weight: 800;
-    font-size: 72px;
+    font-weight: 700;
     line-height: 71px;
     color: white;
     z-index: 100;
@@ -461,8 +466,7 @@ nav ul li{
 .case-header-description {
     position: relative;
     font-style: normal;
-    font-weight: 600;
-    font-size: 34px;
+    font-weight: 500;
     line-height: 71px;
     color: white;
     z-index: 100;
@@ -496,7 +500,6 @@ nav ul li{
 
 .vertical-list a {
     padding: 5px 10px;
-    font-size: 20px;
     display: block;
     background-color: #4A4E69;
     margin-top: 10%;
@@ -536,7 +539,6 @@ nav ul li{
 
 .case-heading, .case-subheading, .focus-heading {
     font-weight: 800;
-    font-size: 50px;
     background: linear-gradient(90deg, #4A4E69 0%, #876883 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -545,12 +547,7 @@ nav ul li{
     margin-top: 4vh;
 }
 
-.case-subheading {
-    font-size: 30px;
-}
-
 .case-paragraph {
-    font-size: 20px;
     font-weight: normal;
     width: 65%;
     color: #4A4E69;
@@ -562,20 +559,17 @@ nav ul li{
     box-shadow: 0px 0px 8px 0px rgb(75 77 93 / 0.8);}
 
 .design-guidelines-list {
-    font-size: 22px;
     font-weight: normal;
     width: 65%;
 }
 
 .design-guidelines-list >  li {
     margin: 2% 0;
-    color: #4A4E69;
 }
 
 .focus-text {
-    color: #4A4E69;
-    font-size: 1.3em;
     width: 65%;
+    font-weight: 400;
 }
 
 .contact-content {
@@ -592,9 +586,6 @@ nav ul li{
     width: 46%;
 }
 
-.contact-heading {
-    font-size: 55pt;
-}
 
 .contact-text {
     display: flex;
@@ -603,9 +594,7 @@ nav ul li{
     align-items: center;
 }
 
-
 .contact-paragraph {
-    color: #4A4E69;
     margin-top: 5%;
 }
 
@@ -614,7 +603,7 @@ nav ul li{
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 }
 
 .contact-form > * {
@@ -853,9 +842,45 @@ input[type=submit]:hover {
 }
 
 .icon {
+    color: linear-gradient(90deg, #4A4E69 0%, #876883 100%);
     transition: 0.25s;
     -webkit-transition: 0.25s;
     -moz-transition: 0.25s;
     -ms-transition: 0.25s;
     -o-transition: 0.25s;
 }
+
+/* Style for 1440x900 resolution */
+@media screen and (max-width: 1440px) {
+    html{
+        font-size: 18px;
+    }
+  }
+
+/* Style for 1366x768 resolution */
+@media screen and (max-width: 1366px) {
+    html{
+        font-size: 14px;
+    }
+  }
+
+/* Style for 1536×864 resolution */
+@media screen and (max-width: 1536px) {
+    html{
+        font-size: 16px;
+    }
+  }
+
+/* Style for 1280×720 resolution */
+@media screen and (max-width: 1280px) {
+    html{
+        font-size: 14px;
+    }
+  }
+
+/* Style for 360x640 resolution */
+@media screen and (max-width: 360px) {
+    body {
+      
+    }
+  }
