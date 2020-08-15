@@ -298,8 +298,10 @@ nav ul li{
 
 /* About section landing */
 .about-container{
-    height: fit-content;
-    padding: 10vh 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .about-title, .contact-title, .case-title, .contact-heading {
@@ -317,8 +319,25 @@ nav ul li{
 }
 
 .about-content {
-    margin: 2% 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 5% 2%;
 }
+
+.about-landing-img {
+    max-width: 40%;
+    max-height: 100%;
+}
+
+.about-button {
+    margin-bottom: 5%;
+}
+
+.about-text {
+    font-weight: 400;
+}
+
 
 /* Contact section landing */
 .contact-container{
