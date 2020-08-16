@@ -940,7 +940,7 @@ input[type=submit]:hover {
 /* Style for 1024 resolution */
 @media screen and (max-width: 1024px) {
     html {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .inner-padding {
@@ -998,6 +998,15 @@ input[type=submit]:hover {
     .contact-content > * {
         width: 55%;
     }
+
+    .case-study {
+        margin-left: 5vw;
+    }
+
+    .case-paragraph, .case-picture {
+        width: 75%;
+    }
+    
 }
 
 /* Style for 768 resolution */
@@ -1112,4 +1121,20 @@ input[type=submit]:hover {
     .contact-form {
         margin: 5% 0;
     }
-}   
+
+    .call-to-action, .read-more-button {
+        padding: 10px 20px;
+    }
+
+/* Style for 425 resolution */
+@media screen and (max-width: 425px) {
+    html {
+        font-size: 12px;
+    }
+
+    .inner-padding {
+        padding: 0 2vw;
+    }
+}
+
+} 
