@@ -631,7 +631,7 @@ nav ul li{
     margin: 2% 0;
 }
 
-/* Contact apge style */
+/* Contact page style */
 .focus-text {
     width: 65%;
     font-weight: 400;
@@ -661,6 +661,10 @@ nav ul li{
 
 .contact-paragraph {
     margin-top: 5%;
+}
+
+.contact-paragraph-small {
+    display: none;
 }
 
 .contact-form {
@@ -944,7 +948,7 @@ input[type=submit]:hover {
     }
 
     .banner-picture {
-        height: 90%;
+        max-height: 90%;
     }
 
     .case-section {
@@ -994,5 +998,118 @@ input[type=submit]:hover {
     .contact-content > * {
         width: 55%;
     }
+}
 
-}    
+/* Style for 768 resolution */
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+
+    .banner-picture {
+        display: none;
+    }
+
+    .banner-text {
+        transform: translate(0, 30vh);
+        -webkit-transform: translate(0, 30vh);
+        -moz-transform: translate(0, 30vh);
+        -ms-transform: translate(0, 30vh);
+        -o-transform: translate(0, 30vh);
+}
+
+    #home header{
+        background-image: url("images/background-vector-768.svg");
+        background-size: cover;
+        background-position: bottom;
+    }
+
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .skills-card {
+        max-width: 60%;
+        margin: 4vh 0;
+    }
+    
+    .fa-search, .fa-pencil-ruler, .fa-code {
+        font-size: 60px;
+    }
+
+    .skills-title {
+        font-size: 2.5rem;
+    }
+
+    .skills-text {
+        font-size: 1.3rem;
+    }
+
+    a:link {
+        font-size: 1rem;
+    }
+
+    .footer-text {
+        font-size: 1rem;
+    }
+
+    .icon-text {
+        font-size: 1.4rem;
+    }
+
+    .this-closer-picture, .board-games-picture, .second-hand-picture {
+        display: none;
+    }
+
+    .case-section > * {
+        width: 80%;
+    }
+
+    .case-section {
+        justify-content: center;
+        height: 65vh;
+    }
+
+    .case-title, .read-more-button {
+        align-self: center;
+        text-align: center;
+    }
+
+    .case-section:first-child {
+        margin-top: 7.5vh;
+    }
+
+    .contact-text {
+        margin: 8% 0;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .contact-heading {
+        text-align: center;
+    }
+
+    .contact-paragraph{
+        display: none;
+    }
+
+    .contact-paragraph-small {
+        display: block;
+        margin-top: 10%;
+        font-weight: 400;
+    }
+
+    .contact-content {
+        flex-direction: column;
+        justify-content: center;  
+        align-items: center;  
+    }
+
+    .contact-form > * {
+        width: 100%;
+    }
+
+    .contact-form {
+        margin: 5% 0;
+    }
+}   
