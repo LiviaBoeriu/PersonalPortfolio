@@ -990,4 +990,17 @@ input[type=submit]:hover {
         margin: 0;
         padding: 2% 0;
     }
+
+    .introduction {
+        width: 100%;
+    }
+
+    .contact-form {
+        margin-bottom: 5%;
+        justify-self: center;
+    }
+
+    .contact-content > * {
+        width: 50%;
+    }
 }    
