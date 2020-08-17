@@ -516,22 +516,23 @@ nav ul li{
 /* Breadcrumb style for individual case pages */
 .breadcrumb {
     display: flex;
-    align-items: center;
     position: fixed;
     height: 4.5vh;
     background-color: white;
-    text-align: center; 
     width: 100%; 
     top: 7.5vh; 
     z-index: 10000; 
     border-bottom: 1px solid #E5E5E5;
+    align-items: center;
+}
+.breadcrumb-link { 
+    font-weight: 300;
 }
 
 .breadcrumb > * {
     margin-right: 1%;
-    font-size: medium;
+    font-size: 1.5vh;    
     color: #4A4E69;
-    font-weight: 300;
 }
 
 /* Individual case page style */
@@ -1191,10 +1192,6 @@ input[type=submit]:hover {
     html {
         font-size: 12px;
     }
-    
-    /* nav {
-        display: none;
-    } */
 
     .overlay-open, .overlay-close {
         position: absolute;
@@ -1246,10 +1243,10 @@ input[type=submit]:hover {
     nav {
         padding: 0 5vw;
     }
-/* 
+
     .inner-padding {
-        padding: 0 1vw;
-    } */
+        padding: 0 4vw;
+    }
 
     #home header{
         background-image: none;
@@ -1353,5 +1350,64 @@ input[type=submit]:hover {
     .footer p {
         font-size: 1.3rem;
     }
+
+    .case-title {
+        font-size: 3rem;
+    }
+
+    .vertical-navigation {
+        display: none;
+    }
+
+    .case-paragraph {
+        font-size: 1.3rem;
+        line-height: 1.8;
+    }
+
+    .case-subheading {
+        font-size: 1.8rem;
+        margin: 2vh 0;
+    }
+
+    .case-heading {
+        font-size: 2.5rem;
+        margin: 2vh 0;
+    }
+
+    .design-guidelines-list {
+        font-size: 1.3rem;
+    }
+
+    .case-paragraph, .focus-text {
+        width: 100%;
+    }
+
+    .case-header-description, .case-header-text {
+        width: 100%;
+        line-height: 1.8;
+    }
+
+    .header-content {
+        height: 30vh;
+        margin: 13.5vh 0 0 0;
+    }
+
+    .fa-chevron-right {
+        font-size: 1rem;
+    }
+
+    .breadcrumb-link:link {
+        font-size: 1.4rem;
+    }
+
+    .breadcrumb {
+        height: 6vh;
+    }
+
+    .case-picture {
+        width: 100%;
+    }
+    
+
 }
 
