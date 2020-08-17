@@ -1190,7 +1190,7 @@ input[type=submit]:hover {
 /* Style for 425 resolution */
 @media screen and (max-width: 425px) {
     html {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .overlay-open, .overlay-close {
@@ -1408,6 +1408,29 @@ input[type=submit]:hover {
         width: 100%;
     }
     
+    .about-information {
+        width: 100%;
+        margin: 5vh 0 0 0;
+    }
 
+    .about-picture-smaller {
+        width: 80%;
+    }
+
+    .contact-title {
+        line-height: 1.5;
+    }
+
+    .contact-container {
+        margin: 12vh 0;
+    }
+
+    .contact-content > * {
+        width: 100%;
+    }
+
+    .contact-form {
+        margin: 5vh 0;
+    }
 }
 
