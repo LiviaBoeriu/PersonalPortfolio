@@ -10,13 +10,14 @@
     developer portfolio, ux designer portfolio, professional portfolio, aalborg developer, denmark web developer, denmark ux designer, denmark ui designer, denmark ux/ui designer">    
     <meta name="description" content="Livia Boeriu: web developer and ux/ui designer based in Denmark.">
     <meta name="author" content="Livia Boeriu">
-    <link rel="stylesheet" href="resources/styles.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a62bb4a23a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="resources/styles.css">
     <script src="resources/home.js" defer></script>
     <script src="resources/openResume.js" defer></script>
-    <script src="https://kit.fontawesome.com/a62bb4a23a.js" crossorigin="anonymous"></script>
+    <script src="resources/openOverlay.js" defer></script>
     <title>Livia Boeriu</title>
 </head>
 
@@ -30,7 +31,20 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+            <i class="fas fa-bars overlay-open"></i>
+            <i class="fas fa-times overlay-close no-opacity"></i>
         </nav>
+
+        <!-- <div id="overlayNav" class="overlayNav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <i class="fas fa-bars overlay-open"></i>
+            <div class="overlay-content">
+                <a href="index.html" class="active">Home</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+          </div> -->
 
         <!-- <img src="resources/images/background vector.svg" alt="background purple vector" class="banner-vector"> -->
         <div class="banner-content inner-padding">
@@ -114,15 +128,17 @@
             <div class="about-content">
                 <div class="about-content-text"> 
                     <h2 class="about-title">About me</h2>
-                    <h6 class="about-text">I am a product designer, with a background in IT Design and Application
+                    <h6 class="about-text1">I am a product designer, with a background in IT Design and Application
                         Development. <br><br>
 
-                        Through my work I strive to develop software that improves lives and I am constantly
+                    <h6 class="about-text2">   Through my work I strive to develop software that improves lives and I am constantly
                         looking for challenges and new learning experiences.<br><br>
-    
+                    </h6>
+                    <h6 class="about-text3">                        
                         I am looking for a position that allows me to collaborate with equally passionate people and where
-                        my skills can be put to use full-time. <br><br>
-                    </h6>     
+                        my skills can be put to use full-time.
+                     </h6>
+
                     <a href="about.html" class="contact-button about-button">READ MORE</a>
                 </div>
                 <img src="resources/images/about-pic.jpg" alt="Personal picture near the Fjord" class="about-landing-img" />
