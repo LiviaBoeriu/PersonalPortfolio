@@ -1334,9 +1334,13 @@ input[type=submit]:hover {
     .footer-links a {
         padding: 2vh 0;
         font-size: 1.3rem;
-        border-bottom:  white solid 1px;
+        border-bottom:  white solid 2px;
         margin: 0;
         text-align: center;
+    }
+
+    .footer-links a:hover {
+        border-color: #816580;
     }
 
     .footer-links {
