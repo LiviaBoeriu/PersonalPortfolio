@@ -225,11 +225,14 @@ footer div a:last-child, nav ul li:last-child {
 
 .logo {
     font-style: normal;
-    font-size: 1.1rem;
     font-weight: 600;
     line-height: 33px;
     color: #4A4E69;
     text-decoration: none;
+}
+
+.logo:link {
+    font-size: 1.1rem;
 }
 
 nav ul li{
