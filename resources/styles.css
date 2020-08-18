@@ -138,9 +138,10 @@ header, footer, nav, main, .header-other{
 
 #scroll-down-button:hover {
     cursor: pointer;
-    text-shadow: 0 -7px 5px rgb(173 168 195 / 73%);
-    /* margin-bottom: 0.5%; */
+    /* text-shadow: 0 -7px 5px rgb(173 168 195 / 73%); */
+    margin-bottom: 0.4%;
 }
+
 /* Footer settings */
 footer{
     height: 7.5vh;
@@ -493,7 +494,7 @@ nav ul li{
 }
 
 .about-picture {
-    max-width: 35%;
+    max-width: 45%;
     max-height: 100%;
 }
 
@@ -997,7 +998,7 @@ input[type=submit]:hover {
 /* Style for 1440 resolution */
 @media screen and (max-width: 1440px) {
     html {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .inner-padding {
@@ -1016,6 +1017,54 @@ input[type=submit]:hover {
         margin: 5% 0;
     }
   }
+
+/* Style for 1330 resolution */
+@media screen and (max-width: 1340px) {
+    html {
+        font-size: 16px;
+    }
+
+    .inner-padding{
+        padding: 0 8vw;
+    }
+
+    .banner-picture {
+        height: 90%;
+    }
+
+    .introduction {
+        width: 100%;
+    }
+}
+
+/* Style for 1330 resolution */
+@media screen and (max-width: 1220px) {
+    html {
+        font-size: 16px;
+    }
+
+    .banner-picture {
+        display: none;
+    }
+
+    .introduction {
+        width: 70%;
+    }
+
+    .welcome {
+        font-size: 4.8rem;
+    }
+
+    .introduction {
+        font-size: 1.8rem;
+    }
+
+    #home header{
+        background-image: url("images/background-vector-768.svg");
+        background-size: cover;
+        background-position: bottom;
+}
+}
 
 /* Style for 1024 resolution */
 @media screen and (max-width: 1024px) {
@@ -1279,13 +1328,19 @@ input[type=submit]:hover {
     .about-content > * {
         width: 100%;
     }
-
+    
     .banner-text {
-        transform: translate(0, 30vh);
-        -webkit-transform: translate(0, 30vh);
-        -moz-transform: translate(0, 30vh);
-        -ms-transform: translate(0, 30vh);
-        -o-transform: translate(0, 30vh);
+        transform: translate(0);
+        -webkit-transform: translate(0);
+        -moz-transform: translate(0);
+        -ms-transform: translate(0);
+        -o-transform: translate(0);
+    }
+
+    .banner-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     #home header{
@@ -1299,7 +1354,7 @@ input[type=submit]:hover {
     }
 
     .skills-card {
-        max-width: 60%;
+        max-width: 70vw;
         margin: 4vh 0;
     }
     
@@ -1495,7 +1550,7 @@ input[type=submit]:hover {
     }
 
     .skills-card {
-        max-width: 80%;
+        max-width: 65%;
     }
 
     .fa-search, .fa-pencil-ruler, .fa-code {
