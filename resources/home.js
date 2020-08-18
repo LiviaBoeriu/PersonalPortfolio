@@ -43,3 +43,15 @@ function checkPortfolioPosition() {
 
 window.addEventListener('scroll', checkPortfolioPosition);
 
+// Scroll down when clicking on landing page banner
+const scrollButton = document.getElementById('scroll-down-button');
+const downSection = document.getElementById('skills-container');
+const navHeight = document.querySelector('header nav').offsetHeight;
+
+function scrollDown() {
+    let sectionRect = downSection.getBoundingClientRect();
+    window.scrollBy(0, sectionRect.y - navHeight);
+}
+
+scrollButton.addEventListener('click', scrollDown);
+

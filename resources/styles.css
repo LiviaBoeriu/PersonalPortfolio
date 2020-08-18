@@ -133,8 +133,14 @@ header, footer, nav, main, .header-other{
     left: calc(50% - 20px);
     color: white;
     font-size: 45px;
+    z-index: 1000;
 }
 
+#scroll-down-button:hover {
+    cursor: pointer;
+    text-shadow: 0 -7px 5px rgb(173 168 195 / 73%);
+    /* margin-bottom: 0.5%; */
+}
 /* Footer settings */
 footer{
     height: 7.5vh;
@@ -366,7 +372,8 @@ nav ul li{
 }
 
 .case-title {
-    line-height: 1.1;
+    line-height: 1.2;
+    font-size: 3rem;
 }
 
 .about-content > * {
@@ -1021,7 +1028,7 @@ input[type=submit]:hover {
     }
 
     .banner-picture {
-        max-height: 90%;
+        max-height: 85%;
     }
 
     .case-section {
@@ -1087,6 +1094,21 @@ input[type=submit]:hover {
     
 }
 
+/* Style for 900 resolution */
+@media screen and (max-width: 900px) {
+    html {
+        font-size: 16px;
+    }
+
+    .banner-picture {
+        display: none;
+    }
+
+    .introduction {
+        width: 80%;
+    }
+}
+
 /* Style for 800 resolution */
 @media screen and (max-width: 800px) {
     html {
@@ -1124,7 +1146,7 @@ input[type=submit]:hover {
     }
 
     .skills-card {
-        max-width: 60%;
+        max-width: 75%;
         margin: 4vh 0;
     }
     
@@ -1231,6 +1253,10 @@ input[type=submit]:hover {
     }
 
     .about-information {
+        width: 100%;
+    }
+
+    .introduction {
         width: 100%;
     }
 
