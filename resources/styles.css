@@ -1204,7 +1204,20 @@ input[type=submit]:hover {
         -moz-transition: 0.05s;
         -ms-transition: 0.05s;
         -o-transition: 0.05s;
-}
+    }
+
+    .banner-text {
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+    }   
+
+    .banner-content {
+        flex-direction: column;
+        justify-content: center;
+    }
 
     .overlay-open {
         display: block;
@@ -1295,7 +1308,7 @@ input[type=submit]:hover {
 
     .about-text1, .about-text2, .about-text3 {
         font-weight: 400;
-        width: 80%;
+        width: 94%;
     }
     
     .about-text3 {
@@ -1443,18 +1456,15 @@ input[type=submit]:hover {
     }
 }
 
-    /* Style for 375 resolution */
+/* Style for 375 resolution */
 @media screen and (max-width: 375px) {
     html {
         font-size: 14px;
     }
-
-    .banner-content{
-        display: flex;
+    
+    .banner-content {
         flex-direction: column;
-        justify-content: space-between;
-        height: calc(100vh - 7.5vh);
-        margin-top: 7.5vh;
+        justify-content: center;
     }
 
     .banner-text {
@@ -1500,4 +1510,13 @@ input[type=submit]:hover {
         margin: 13.5vh 0 0 0;
     }
 }
+
+/* Style for 375 resolution */
+@media screen and (max-width: 320px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+
 
