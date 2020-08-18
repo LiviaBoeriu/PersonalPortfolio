@@ -322,7 +322,7 @@ nav ul li{
 }
 
 /* Call to action button style */
-.call-to-action{
+.call-to-action {
     display: inline-block;
     margin: 10% 0;
     background: linear-gradient(90deg,#4A4E69, #876883);
@@ -343,7 +343,7 @@ nav ul li{
 }
 
 /* About section landing */
-.about-container{
+.about-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -388,6 +388,7 @@ nav ul li{
 
 .about-text1, .about-text2, .about-text3 {
     font-weight: 400;
+    margin-bottom: 2vh;
 }
 
 
@@ -1369,7 +1370,7 @@ input[type=submit]:hover {
         margin: 2vh 0;
     }
 
-    .case-heading {
+    .case-heading, .focus-heading {
         font-size: 2.5rem;
         margin: 2vh 0;
     }
@@ -1398,6 +1399,10 @@ input[type=submit]:hover {
 
     .breadcrumb-link:link {
         font-size: 1.4rem;
+    }
+    
+    .breadcrumb > a:first-child {
+        border-bottom: #4A4E69 solid 1px;
     }
 
     .breadcrumb {
@@ -1431,6 +1436,68 @@ input[type=submit]:hover {
 
     .contact-form {
         margin: 5vh 0;
+    }
+
+    .portfolio-text {
+        text-align: initial;
+    }
+}
+
+    /* Style for 375 resolution */
+@media screen and (max-width: 375px) {
+    html {
+        font-size: 14px;
+    }
+
+    .banner-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: calc(100vh - 7.5vh);
+        margin-top: 7.5vh;
+    }
+
+    .banner-text {
+        text-align: initial;
+    }
+
+    .inner-padding {
+        padding: 0 2vw;
+    }
+
+    .skills-card {
+        max-width: 85%;
+    }
+
+    .portfolio-text {
+        text-align: initial;
+    }
+
+    .portfolio-flow {
+        width: 70%;
+        height: 30vh;
+    }
+
+    .about-text1, .about-text2, .about-text3 {
+        font-weight: 400;
+        width: 95%;
+    }
+
+    .about-content-text > * {
+        margin: 2vh 0;
+    }
+
+    .contact-container {
+        margin: 10vh 0;
+    }
+
+    .case-title {
+        font-size: 2.2rem;
+    }
+
+    .header-content {
+        height: 45vh;
+        margin: 13.5vh 0 0 0;
     }
 }
 
