@@ -17,7 +17,6 @@ const scrollPage = () => {
 
 }
 
-verticalList.addEventListener('click', scrollPage);
 
 // Slideshow for boardgame case page
 let currentIndex = 0;
@@ -64,3 +63,44 @@ function changeSlide(isNext) {
 
     showSlides();
 }
+
+// Enlarge images on click
+const caseImage = document.getElementsByClassName('case-picture');
+const pictureFrame = document.getElementsByClassName('picture-frame');
+
+function toogleZoomImage(element) {
+    if(element.className.indexOf('image-enlarged') !== -1) {
+        element.classList.remove('image-enlarged'); 
+    } else {
+        element.classList.add('image-enlarged');
+    }
+    
+}
+
+for(let i = 0; i < pictureFrame.length; i++) {
+    pictureFrame[i].addEventListener('click', function(e) {
+        const tagName = e.target.tagName.toLowerCase();
+        // if(tagName === 'div') {
+        //     toogleZoomImage(e.target)
+        // } else if(tagName === 'img'){
+        //     toogleZoomImage(e.target.parentElement)
+        // }            
+
+        toogleZoomImage(tagName === 'div' ? e.target : e.target.parentElement)
+    });
+}
+
+
+verticalList.addEventListener('click', scrollPage);
+const body = document.querySelector('body');
+
+body.addEventListener('click', function(e) {
+    if(e.target.className.indexOf('picture-frame') !== -1) {
+        return;
+    }
+    const images = document.querySelectorAll('.image-enlarged');
+
+    for(let img of images) {
+        img.classList.remove('image-enlarged');
+    }
+})
