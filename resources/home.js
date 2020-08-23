@@ -91,9 +91,9 @@ function checkPortfolioPosition() {
     let portfolioSectionPosition = portfolioSection.getBoundingClientRect();
     if(portfolioSectionPosition.y < 100 ) {
         showIcon();
-        setTimeout(() => {
-            animateLine();
-        }, 500) // this should sync the line with the icons
+        // setTimeout(() => {
+        //     animateLine();
+        // }, 500) // this should sync the line with the icons
         window.removeEventListener('scroll', checkPortfolioPosition);
     }
 }

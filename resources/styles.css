@@ -116,7 +116,7 @@ header, footer, nav, main, .header-other{
 }
 
 .banner-picture{
-    height: 100%;
+    height: 95%;
     align-self: flex-end;
 }
 
@@ -384,7 +384,7 @@ nav ul li{
 .about-content {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin: 5% 2%;
 }
 
