@@ -447,18 +447,21 @@ nav ul li{
 /* Header settings for case pages */
 .header-thiscloser {
     background-image: url("images/thiscloser/google-case.jpg");
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
 }
 
 .header-boardgames {
     background-image: url("images/boardgames/boardgamescover.jpg");
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
 }
 
 .header-secondhand {
     background-image: url("images/secondhand/second1.jpg");
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
 }
