@@ -8,25 +8,6 @@ const downSection = document.getElementById('skills-container');
 const svg = document.getElementById('circleSvg');
 const svgMask = document.getElementById('mask');
 const navHeight = document.querySelector('header nav').offsetHeight;
-const rotateValues = [64, 122, 180, 241, 300, 366];
-
-
-// showIcons
-// - display text and icon (takes 250ms)
-// - animate line in (takes 600ms)
-// - display next text and icon (another 250ms)
-// - hide line and move it (250ms)
-
-
-// showIcons
-// - display text and icon each 1s 
-
-
-// showLine (delay 250ms)
-// - hide mask (AND STAY 1s)
-// - fadeOut (takes 250ms)
-// - show mask
-// - rotate
 
 function showIcon() {
     for(let i=0; i<iconList.length; i++) {
@@ -39,36 +20,8 @@ function showIcon() {
             if(i === iconList.length - 1) {
                 setTimeout(hideIcon, 3000);
             }
-        }, i * 1250);
+        }, i * 1000);
     }
-}
-
-function animateLine() {
-    let index = 1;
-
-    function animationProcess() {
-        svgMask.classList.add('hide')
-
-        setTimeout(() => {
-            svg.classList.add('fadeOut');
-
-            setTimeout(() => {
-                svgMask.classList.remove('hide');
-                svg.style.transform = `rotateZ(${rotateValues[index]}deg)`;
-                svg.classList.remove('fadeOut');
-
-                if (index !== rotateValues.length - 1) {
-                    index += 1;
-                } else {
-                    index = 0;
-                }
-            }, 250)
-        }, 1000)
-    }
-
-    animationProcess();
-    const animationLoop = setInterval(animationProcess, 1500)
-    // need to clear the interval (while hideIcons) and reset
 }
 
 function hideIcon() {
