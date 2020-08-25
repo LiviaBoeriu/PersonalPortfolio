@@ -25,10 +25,10 @@ if (!empty($_POST)) {
 
     if (empty($errors)) {
         $toEmail = 'ella.liv27@gmail.com';
-        $emailSubject = 'New email from your contant form';
+        $emailSubject = 'New email from your contact form';
         $headers = ['From' => $email, 'Reply-To' => $email, 'Content-type' => 'text/html; charset=iso-8859-1'];
 
-        $bodyParagraphs = ["Name: {$name}", "Email: {$email}", "Message:", $message];
+        $bodyParagraphs = ["Name: {$name}", "Email: {$email}", "Message: {$message}", ];
         $body = join(PHP_EOL, $bodyParagraphs);
 
         if (mail($toEmail, $emailSubject, $body, $headers)) {

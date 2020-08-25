@@ -61,6 +61,16 @@ main {
     height: 100%
 }
 
+a:-webkit-any-link {
+   cursor: pointer;
+   text-decoration: none;
+}
+
+a:-moz-any-link {
+   cursor: pointer;
+   text-decoration: none;
+}
+
 a:any-link {
    cursor: pointer;
    text-decoration: none;
@@ -90,7 +100,8 @@ a:any-link {
 
 #home header::after {
     content: "";
-    background: linear-gradient(rgb(74 78 105 / 0.9), rgb(74 78 105 / 0.9));
+    background: linear-gradient(#4a4e69, #4a4e69);
+    opacity: 0.8;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -218,6 +229,7 @@ nav ul li > a {
     position: relative;
     border-bottom: white solid 1.5px;
     padding-bottom: 0.5vh;
+    text-decoration: none;
 }
 
 nav ul li a:not(.active):hover,
@@ -322,6 +334,8 @@ nav ul li{
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     margin: 10%;
 }
@@ -396,6 +410,8 @@ nav ul li{
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     line-height: 1.2;
 }
@@ -434,6 +450,8 @@ nav ul li{
 
 /* Contact section landing */
 .contact-container{
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -455,6 +473,7 @@ nav ul li{
     text-align: center;
     padding: 12px 24px;
     text-decoration: none;
+    width: -webkit-fit-content;
     width: fit-content;
     width: -moz-fit-content;
 }
@@ -551,6 +570,8 @@ nav ul li{
     -webkit-text-fill-color: transparent;
     color: transparent;
     font-weight: 800;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
 }
 
@@ -573,6 +594,7 @@ nav ul li{
 }
 .breadcrumb-link { 
     font-weight: 300;
+    text-decoration: none;
 }
 
 .breadcrumb > a:first-child {
@@ -598,7 +620,8 @@ nav ul li{
 
 .header-content::after {
     content: "";
-    background: linear-gradient(175.93deg, rgb(43 46 66 / 70%) 7.95%, rgb(66 47 63 / 70%) 89.75%);
+    background: linear-gradient(#2b2e42, #422f3f);
+    opacity: 0.7;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -643,6 +666,7 @@ nav ul li{
 }
 
 .vertical-list {
+    position: -webkit-sticky;
     position: sticky;
     top: 22vh;
     display: flex;
@@ -697,6 +721,8 @@ nav ul li{
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     margin-top: 4vh;
 }
@@ -716,6 +742,10 @@ nav ul li{
     margin: 4% 0;
     position: relative;
     width: 67%;
+}
+
+.picture-frame::-moz-selection, .picture-frame *::-moz-selection {
+    background: none;
 }
 
 .picture-frame::selection, .picture-frame *::selection {
@@ -807,6 +837,8 @@ nav ul li{
 .contact-form > * {
     width: 80%;
     margin: 2% 0;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
 }
 
@@ -834,6 +866,22 @@ input:focus, textarea:focus {
     -moz-transition: 0.25s;
     -ms-transition: 0.25s;
     -o-transition: 0.25s;
+}
+
+::-webkit-input-placeholder {
+    color: white;
+}
+
+::-moz-placeholder {
+    color: white;
+}
+
+:-ms-input-placeholder {
+    color: white;
+}
+
+::-ms-input-placeholder {
+    color: white;
 }
 
 ::placeholder {
@@ -873,6 +921,10 @@ input[type=submit]:hover {
     max-width: 100%;
     max-height: 100%;
     box-shadow: 0px 0px 8px 0px rgb(188 197 255);
+}
+
+.slideshow-container *::-moz-selection {
+    background-color: none;
 }
 
 .slideshow-container *::selection {
@@ -1022,7 +1074,8 @@ input[type=submit]:hover {
     stroke-dasharray: 228;
     stroke-dashoffset: 279;
     stroke-width: 8;
-    clip-path: polygon(0 0, 0 25%, 41% 0);
+    -webkit-clip-path: polygon(0 0, 0 25%, 41% 0);
+            clip-path: polygon(0 0, 0 25%, 41% 0);
     transition: inherit;
     -webkit-transition: inherit;
     -moz-transition: inherit;
@@ -1274,6 +1327,7 @@ input[type=submit]:hover {
 @media screen and (max-width: 900px) {
     html {
         font-size: 16px;
+        line-height: 1.8;
     }
 
     .banner-picture {
