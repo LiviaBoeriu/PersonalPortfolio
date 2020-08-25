@@ -101,7 +101,7 @@ a:any-link {
 #home header::after {
     content: "";
     background: linear-gradient(#4a4e69, #4a4e69);
-    opacity: 0.8;
+    opacity: 0.9;
     width: 100%;
     height: 100%;
     position: absolute;
