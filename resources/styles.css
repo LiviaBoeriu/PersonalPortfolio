@@ -834,12 +834,22 @@ nav ul li{
     align-items: center;
 }
 
+.form-info {
+    font-size: 0.8rem;
+    color: #747092;
+}
+
 .contact-form > * {
     width: 80%;
     margin: 2% 0;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+}
+
+.thank-you-content {
+    justify-content: center;
+    text-align: center;
 }
 
 input, textarea {
