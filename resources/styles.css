@@ -148,6 +148,11 @@ header, footer, nav, main, .header-other{
     font-weight: 300;
 }
 
+.emphasis {
+    font-style: normal;
+    font-weight: 700;
+}
+
 .banner-vector{
     position: absolute;
     z-index: 0;
@@ -928,7 +933,8 @@ input[type=submit]:hover {
 /* Slideshow container */
 .slideshow-container {
     position: relative;
-    margin-top: 20px;
+    margin-top: 4%;
+    margin-bottom: 4%;    
     width: 65%;
 }
 
@@ -1347,6 +1353,10 @@ input[type=submit]:hover {
 
     .banner-picture {
         display: none;
+    }
+
+    .case-paragraph {
+        margin-top: 5%;
     }
 
 }
