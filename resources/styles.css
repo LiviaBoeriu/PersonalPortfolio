@@ -736,6 +736,7 @@ nav ul li{
     font-weight: normal;
     width: 65%;
     color: #4A4E69;
+    margin: 2% 0;
 }
 
 .case-picture {
@@ -1846,7 +1847,6 @@ input[type=submit]:hover {
 
     .case-subheading {
         font-size: 1.8rem;
-        margin: 2vh 0;
     }
 
     .case-heading, .focus-heading {
@@ -2109,7 +2109,6 @@ input[type=submit]:hover {
 
     .case-subheading {
         font-size: 1.8rem;
-        margin: 2vh 0;
     }
 
     .case-heading, .focus-heading {
