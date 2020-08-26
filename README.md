@@ -1,3 +1,5 @@
-# PersonalPortfolio
+# Personal Portfolio
 
-This project encompases my journey in IT and systems development. It contains my goals, dreams and achievements. 
+This project encompases the work I've done during my studies including my master's thesis on smart assistants and my other semester projects. 
+
+You can see the finished and functional result at: http://liviaboeriu.com
