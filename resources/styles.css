@@ -90,6 +90,14 @@ a:any-link {
     -o-transition: 0.2s;
 }
 
+.back-top {
+    position: fixed;
+    cursor: pointer;
+    bottom: 7vh; /* Place the button at the bottom of the page */
+    right: 2vw; /* Place the button 30px from the right */
+    z-index: 1000000000000; /* Make sure it does not overlap */
+    font-size: 4vh;
+}
 /* Header + banner settings */
 #home header {
     background-image: url("images/landing-background.jpg");
@@ -1378,6 +1386,10 @@ input[type=submit]:hover {
 
     .about-content > * {
         width: 100%;
+    }
+
+    .back-top {
+        display: none;
     }
 
     /* .banner-text {
